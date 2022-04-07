@@ -1,0 +1,20 @@
+<script>
+    /* foreach can be define in two ways 
+    */
+    // first one
+    var arr = ["Dhiraj", "Amit", "Vishal"];
+    arr.forEach(function (val, key) {
+        document.write(val);
+        document.write(key);
+        document.write("<br>");
+    });
+    // second one 
+    var arr = ["Dhiraj", "Amit", "Vishal"];
+    arr.forEach(testFunction);
+    function testFunction(val, key) {
+        document.write(val);
+        document.write(key);
+        document.write("<br>");
+    }
+
+</script>
