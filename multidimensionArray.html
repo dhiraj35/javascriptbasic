@@ -1,0 +1,21 @@
+<script>
+var arr = [
+    ["Dhiraj","Mumbai"],
+    ["Vishal","Delhi"],
+    ["Rohan","Pune"]
+];
+/* Print table with name and city*/
+document.write("<table border=1>");
+document.write("<tr><td>sr.</td><td>Name</td><td>City</td></tr>");
+var sr=1;
+for(var i=0;i<arr.length;i++){
+    document.write("<tr>");
+        document.write("<td>"+sr+"</td>");
+    for(var j=0;j<arr[i].length;j++){
+        document.write("<td>"+arr[i][j]+"</td>");
+    }
+    document.write("</tr>");
+    sr++;
+}
+document.write("</table>");
+</script>

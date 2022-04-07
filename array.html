@@ -1,0 +1,11 @@
+<script>
+    /* Array can be define in 2 ways */
+var arr1 = ["Agra","Mumbai"];// one way
+var arr2 = new Array("Agra","Mumbai"); // second way
+var html = '<select><option>Select City</option>';
+for(var i=0;i<arr1.length;i++){
+    html+="<option>"+ arr1[i]+"</option>";
+}
+html += '</select>';
+document.write(html);
+</script>
