@@ -6,7 +6,7 @@
             /*Pop up in js 
             alert
             confirm
-            prmot
+            prompt
             */
            // alert("This is JavaScript Test"); // normal alert
            /* var data = confirm("Are you sure want this");
@@ -17,8 +17,15 @@
             }
             confirm dialogue
             */
-          var a =  prompt("this");
-          document.write(a);
+          var number1 =  prompt("Eneter number 1",0); // by default 0 value Assigned
+          var number2 =  prompt("Eneter number 2",0); // by default 0 value Assigned
+          if(number1=='' || number1==null || number2=='' || number2==null){
+              document.write("Please enter  no");
+          }else{
+              number1 = parseInt(number1);
+              number2 = parseInt(number2);
+              document.write("Sum is "+ (number1+number2));
+          }
         </script>
     </head>
 	<body>
