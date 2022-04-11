@@ -1,0 +1,23 @@
+<script>
+    /* getter and setter two important term in js 
+    most of used in js constructor in oops concepts 
+    setter is used to set value use set keyword
+    getter is used to get value use get keyword
+     */
+     var obj={
+        fname:"Dhiraj",
+        lname:"Yadav",
+        age:20,
+        /* set fullname with param we can only pass one param in setter */
+        set setFullName(parm){
+            this.fname=parm.fn;
+            this.lname=parm.ln;
+        },
+        /* return fullname with help of this parameter */
+        get getFullName(){
+            return this.fname +' '+this.lname;
+        }
+     };
+     obj.setFullName = {fn:"Deepak",ln:"Yadav"}; 
+     document.write(obj.getFullName);
+    </script>

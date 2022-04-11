@@ -1,0 +1,38 @@
+<script>
+    /* Another way we can declare object
+    var obj = new Object();
+    obj.name="test";
+    obj.age=15;
+    console.log(obj);
+     */
+
+    /*delete operator in object
+    var obj={
+        name:"Dhiraj",
+        age:14,
+    };
+    document.write(obj.age); // display age 14
+    //After using del operator 
+    delete obj.age;
+    document.write(obj.age); // undefined
+    */
+
+    /*check weather key is available or not*/
+   /* var obj={
+        name:"Dhiraj",
+        age:14,
+    };
+    document.write('age' in obj); // true if key is not available return false */
+
+    /* using forin loop */
+    var obj={
+        name:"Dhiraj",
+        age:14,
+        mobile:999
+    };
+    for(var key in obj){
+        console.log(obj);
+        //document.write(key +' '+ obj[key]);
+        //document.write("<br>");
+    }
+    </script>

@@ -1,0 +1,17 @@
+<script>
+    /* Constructor function always start with first Letter Capital */
+    function User(fn,ln){
+        this.firstName=fn;
+        this.lastName=ln;
+        /* define function inside function */
+        this.fullName = function(){
+            return this.firstName +' '+this.lastName;
+        }
+    }
+    var obj1= new User("Dhiraj","Yadav");
+    var obj2= new User("Amit","Singh");
+    /* if we want add addition param we can use */
+    obj1.age=22;// it affect only obj1 
+    console.log(obj1.fullName());//call function Name 
+    console.log(obj1);
+</script>
