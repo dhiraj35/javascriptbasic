@@ -1,0 +1,23 @@
+<script>
+    /* Prototype allow you to add properties in function 
+    for eg-> adding age,class,,name properties
+    */
+    /* Prototype directly apply on function or can define after function 
+    affect all object
+     */
+    function User(fn,ln){
+        this.firstName=fn;
+        this.lastName=ln;
+    }
+    User.prototype.age=16; // adding age prototype
+    /* Adding function in prototype */
+    User.prototype.fullName = function(){
+        return this.firstName+' '+this.lastName;
+    }
+    var obj1= new User("Dhiraj","Yadav");
+    var obj2= new User("Amit","Singh");
+    console.log(obj1);//call  function object
+    //calling prototype 
+     console.log(obj1.age);
+     console.log(obj1.fullName());
+</script>
