@@ -1,0 +1,30 @@
+<script>
+    /*
+    click          onclick="checkdata()"     
+    doubleclick    ondblclick="checkdata()"       
+    rightclick     oncontextmenu="checkdata()"     
+    keypress       onkeypress="checkdata()"  // when you press key then trigger 
+    keyup          onkeyup="checkdata()"  // when you release key after press then trigger
+    mousehover     <div onmouseover="checkdata()">Hello</div> // when we take mouse on div then triggers
+    mouseout       <div onmouseout="checkdata()">Hello</div>// when we leave mouse from div then triggers 
+    mousedown      <div onmousedown="checkdata()">Hello</div> // similar to click trigger when you click
+    mouseup        <div onmouseup="checkdata()">Hello</div> // similar to keyup trigger when relase mouse  after  click
+    resize         <body onresize="checkdata()">  when you window start resize large to medum then triggers
+    scroll         <body onscroll="checkdata()">  // when we scroll page then it's triggers        
+    */
+    function checkdata(){
+        alert("Event start here");
+    }
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onscroll="checkdata()">
+    <div >Hello</div>
+</body>
+</html>
