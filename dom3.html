@@ -1,0 +1,21 @@
+<div id="firstdiv">
+    <div class="firstdivclass">Dhiraj</div>
+    <div class="firstdivclass">Amit</div>
+    <div class="firstdivclass">Saurabh</div>
+</div>
+<div id="seconddiv">
+    <div class="seconddivclass">Dhiraj</div>
+    <div class="seconddivclass">Amit</div>
+    <div class="seconddivclass">Vishkha</div>    
+</div>
+<script>
+    /* this is example of getElementByTagName
+    get first div data 
+    */
+    var divData = document.getElementById('firstdiv');
+    var insideDivData = divData.getElementsByClassName('firstdivclass');
+    for(var i=0;i<insideDivData.length;i++){
+        insideDivData[i].innerHTML="Dhiraj";
+    }
+
+</script>

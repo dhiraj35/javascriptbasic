@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hello</h1>
+    <img src="test.jpg" alt="image1">
+    <img src="test.jpg" alt="image2">
+    <a href="http://test.com"></a>
+    <a href="http://test2.com"></a>
+</body>
+
+</html>
+<script>
+    //console.log(document); // return all all html code 
+
+    /*
+console.log(document.all); 
+   return all html tags 
+0: html
+1: head
+2: meta
+3: meta
+4: meta
+5: title
+6: body
+7: h1
+8: script 
+    */
+
+    /*
+    console.log(document.head);
+    return documents with html all head data including title etc.
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+     */
+
+     /*same we can use other method 
+     document.title; // documen 
+     document.body; // return  all data inside <body> tag
+     */
+
+     /*
+    console.log(document.images);
+    document.images fetch all images it store in array format with 0 index
+    var images = document.images;
+     for(var i=0;i< images.length;i++){
+         document.write("image Url : "+images[i].src+"<br>");
+     }
+     */
+
+     /*
+     console.log(document.links);
+     // return all hyperlinks details
+     var allLinks = document.links;
+     for(var i=0;i< allLinks.length;i++){
+         document.write("link Url : "+allLinks[i].href+"<br>");
+     }*/
+
+    document.write(document.URL); // get page Url 
+    document.write(document.domain);// get domain name
+</script>

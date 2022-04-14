@@ -1,0 +1,13 @@
+<script>
+    /* document.getElementById*/
+    function getData(){
+        var num1 = parseInt(document.getElementById('num1').value);
+        var num2 = parseInt(document.getElementById('num2').value);
+        var result = num1+num2;
+        document.getElementById('result').innerHTML = `The sum is ${result}`;
+    }
+</script>
+Num1 <input type="text" id="num1">
+Num2 <input type="text" id="num2">
+<input type="submit" onclick="getData()">
+<div id="result"></div>
