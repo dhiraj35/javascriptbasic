@@ -1,0 +1,19 @@
+<ul id="box">
+    <li>Dhiraj</li>
+    <li>Amit</li>
+    <li>Suhash</li>
+</ul>
+<input type="text"  id="textVal">
+<input type="button" onclick="addElement()" value="Add New Li"/>
+<script>
+    /* we can create li  and append inside ul  */
+    function addElement(){
+        let inputText = document.getElementById("textVal").value;
+        let liBox    = document.getElementById("box");
+        let newLi    = document.createElement("li"); // create li elements 
+        let dhdgh = document.createTextNode(inputText); // Create label 
+        newLi.appendChild(dhdgh); // append label inside li
+        liBox.appendChild(newLi); // append li inside ul
+        document.getElementById("textVal").value=''; // clear after append
+    }
+</script>

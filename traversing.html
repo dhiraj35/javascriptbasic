@@ -1,0 +1,48 @@
+<ul id="box">
+    <li>Dhiraj</li>
+    <li>Amit</li>
+    <li>Vishal</li>
+</ul>
+
+<!-- get Parent elements example  -->
+<ul>
+    <li>Dhiraj</li>
+    <li id="liData" class="li_class">Amit</li>
+    <li>Vishal</li>
+</ul>
+<script>
+    /* Travesing in js example */
+    /*
+    firstElementChild:
+    In Ul list to get  first  elements li we use firstElementChild
+    var divData= document.getElementById("box");
+    console.log(divData.firstElementChild);
+
+    lastElementChild:
+    if you want last elements(last li Element ) then we use lastElementChild
+    var divData= document.getElementById("box");
+    console.log(divData.lastElementChild.innerHTML);
+
+    get all li  elements inside ul
+   // we have 2 method to get inside li elements  
+   .children and innerHTML
+   var divData= document.getElementById("box");
+   for(var i=0;i<divData.children.length;i++){
+    console.log(divData.children[i]); // return in array format
+    */
+
+   /* To get  Parent Elements data  
+  var getParentElement=document.getElementById("liData");
+  console.log(getParentElement.parentElement); // <ul> all li data </ul>
+  // get next and previouse sibling data 
+  console.log(getParentElement.nextElementSibling); // next li data
+  console.log(getParentElement.previousElementSibling); // Previous li data
+ /*
+
+
+ example of getAttribute and hasAttribute 
+ */
+ var getData = document.getElementById("liData");
+ console.log(getData.getAttribute("class"));// return class name 
+ console.log(getData.hasAttribute("class"));// check attributes available or not according to that  return true or false  
+</script>

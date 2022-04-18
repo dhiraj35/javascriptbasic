@@ -1,0 +1,16 @@
+<ul id="box">
+    <li id="id1">Dhiraj</li>
+    <li id="id2">Amit</li>
+    <li id="id3">Vishal</li>
+</ul>
+<script>
+    /*
+    Remove Child Elements*/
+    let  boxElement = document.getElementById('box');
+   // boxElement.removeChild(boxElement.firstElementChild); // remove first child Elements
+   // boxElement.removeChild(boxElement.lastElementChild); // remove last child Elements
+    //boxElement.removeChild(boxElement.firstElementChild.nextElementSibling); // remove after first  child Elements
+    /* if you want to remove particular child elements on basis of id*/
+    let removeChildLi = document.getElementById('id2');
+    boxElement.removeChild(removeChildLi); // Amit is removed 
+</script>

@@ -1,0 +1,15 @@
+<ul id="box">
+    <li>Dhiraj</li>
+    <li>Amit</li>
+    <li>Shiv</li>
+</ul>
+<script>
+    /* Node clone is used to clone (copy)  same html elements 
+    for example in ul list if you want to copy same ul list we use 
+    clone
+    */
+    let box = document.getElementById('box');
+    let cloneBox = box.cloneNode(true); // create new clone 
+    cloneBox.id="new_id"; // adding id in clone
+    document.body.appendChild(cloneBox); // append inside the body
+</script>
