@@ -1,0 +1,19 @@
+<input type="button" id="btn" value="btn">
+<script>
+let btn = document.getElementById('btn');
+// Listener can be define in 2 ways 
+// 1st way this 
+btn.addEventListener('click',test); // first parm event name , second is function name
+function test(){
+console.log(this); // all attributes data 
+console.log(this.id);
+// to avoid multiple click we need to remove listener
+this.removeEventListener('click',test); // remove event in listener
+}
+// 2nd way 
+btn.addEventListener('click',function(){
+    console.log('second elements call');
+    console.log(this); // all attributes data
+    console.log(this.value); // all Value
+})
+</script>

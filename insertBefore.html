@@ -1,0 +1,17 @@
+<ul id="box">
+    <li>Vishal</li>
+    <li>Amit</li>
+</ul>
+<script>
+    /* insertBefore is used to insert child  elements with position 
+    the difference between append and insert before is append insert last elements 
+    and insertbefore  is add elements with define position 
+     */
+    let box = document.getElementById('box');
+    let newEle = document.createElement('li'); // li elements 
+    newEle.textContent="Saurabh"; // Add text to li
+    newEle.className="newli_class"; // adding class 
+    newEle.id="newli_id"; // adding id 
+    let pos = box.firstElementChild.nextElementSibling; //define position where to insert
+    box.insertBefore(newEle,pos);
+</script>

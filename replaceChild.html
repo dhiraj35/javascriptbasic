@@ -1,0 +1,16 @@
+<ul id="Box">
+    <li>Vishal</li>
+    <li>Amit</li>
+    <li>Dhiraj</li>
+</ul>
+<script>
+    /* In Replace child we replace li with new li elements
+    for eg-> replace Amit with Deepak
+    */
+    let box = document.getElementById('Box');
+    let newLi = document.createElement('li');
+    newLi.textContent="Deepak";
+    newLi.id="new_id";
+    let liPosition = box.firstElementChild.nextElementSibling;
+    box.replaceChild(newLi,liPosition);
+</script>
