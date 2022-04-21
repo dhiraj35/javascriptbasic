@@ -1,0 +1,16 @@
+<div id="name" class="my_class">Vishal</div>
+<script>
+    /* In This section how to  manage attributes in node js
+    There are many types of Attributes
+    setAttribute -> set Attributes for eg-> set id value 
+    getAttribute -> get Attributes name eg -> get class name 
+    removeAttribute -> remove Attributes eg -> remove class 
+    hasAttribute -> check attributes available or not eg -> check id is set or not
+     */
+let att = document.getElementById('name');
+att.setAttribute("name","test"); // set name  attributes
+let classAttr = att.getAttribute('class'); 
+document.write("Get Attributes:"+classAttr+"<br>");// get Attributes class is my_class
+att.removeAttribute('name'); // remove name Attr
+document.write("has Attributes result :"+att.hasAttribute("id"));// return true if available or false if not available
+</script>
